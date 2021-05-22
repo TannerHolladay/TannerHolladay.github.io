@@ -1,0 +1,66 @@
+.modal-header {
+  border-bottom: none;
+  button {
+    margin-bottom: 0;
+  }
+}
+
+.modal-dialog {
+  top: 25%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  border-radius: 2px;
+}
+
+.modal-body {
+  margin: 0 20px;
+  label {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+  }
+  textarea, input {
+    border-color: #e6e6e6;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 1em;
+  }
+  .form-group {
+    margin: 0;
+  }
+  .form-control {
+    padding: 25px;
+    font-size: 16px;
+  }
+  input[type="submit"]{
+    float: right;
+    margin-right: 0;
+  }
+  ::-webkit-input-placeholder {
+    color: #D6D6D6;
+  }
+  :-moz-placeholder {
+    color: #D6D6D6;
+  }
+  ::-moz-placeholder {
+    color: #D6D6D6;
+  }
+  :-ms-input-placeholder {
+    color: #D6D6D6;
+  }
+}

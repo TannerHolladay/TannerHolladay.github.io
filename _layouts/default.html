@@ -3,9 +3,14 @@
 <html lang="en">
   {% include head.html %}
   <body>
+      {% include contact.html %}
       {% include header.html %}
+      <div class="vertical-line"></div>
       <section id="about">
         {% include about.html %}
+      </section>
+      <section id="projects">
+        {% include projects.html %}
       </section>
         {{ content }}
       {% include footer.html %}

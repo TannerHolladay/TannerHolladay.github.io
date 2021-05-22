@@ -1,23 +1,46 @@
 #about {
+  .line {
+    border-left: thick solid #b5b5b5;
+  }
+
   font-size: 120%;
-  
+
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $mobile) {
     width: 80%;
   }
-  svg {
+
+  svg, img {
     width: 60px !important;
-    height: auto;
+    height: 60px;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px auto;
+
+  h1 {
+    font-weight: 400;
   }
 }
 
 .tech {
   margin: 10px;
   flex: 1 1 0;
+  align-content: center;
+  justify-content: center;
+
   h2, h3 {
     font-weight: 400;
+    padding: 0;
+    margin-top: 0;
   }
 }
 
@@ -28,10 +51,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   p {
     font-size: 16px;
   }
-  @media only screen and (min-width: $cut) {
+
+  @media only screen and (min-width: $mobile) {
     flex-wrap: nowrap;
     font-size: 75px;
   }
@@ -40,6 +65,7 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+
   h1 {
     font-weight: 400;
   }
